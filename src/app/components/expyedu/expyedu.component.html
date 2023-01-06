@@ -1,0 +1,29 @@
+<div class="container text-light border mt-3 rounded" style="background-color: #1a1e21">
+  <div class="row rounded" style="background-color: rgba(28,52,77,255)">
+    <h2 class="mt-4 mb-4 text-center" ><strong>Experiencia Laboral</strong></h2>
+  </div>
+  <div class="col-lg-2 ms-auto">
+    <button type="button" class="btn btn-outline-light mt-3" routerLink="/nuevaexp" *ngIf="isLogged">
+      Agregar experiencia
+    </button>
+  </div>
+  <div class="col-lg-12">
+    <table class="table ">
+      <tbody class="text-light text-center mt-3 text-break">
+        <tr>
+          <td><h4>Nombre</h4></td>
+          <td>Descripción</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr *ngFor="let Experiencia of expe">
+          <td><h4>{{Experiencia.nombreE}}</h4></td>
+          <td>{{Experiencia.descripcionE}}</td>
+          <td *ngIf="isLogged"><button class="btn" style="background-color: rgba(40,125,125,255);" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil"></i>  Editar</button></td>
+          <td *ngIf="isLogged"><button class="btn" style="background-color: rgba(198,224,112,255);" (click)="delete(Experiencia.id)"><i class="bi bi-trash danger"></i></button></td>
+        </tr>
+      </tbody>
+  </table>
+  </div>
+  
+</div>

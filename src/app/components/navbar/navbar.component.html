@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top" style="background-color: #1a1e21">
+  <div class="container-fluid">
+    <div class="col-8">
+    <img class="img-fluid" src="../../../assets/img/argprograma.png" alt="logo argentina programa">
+    </div>
+    <div class="col-3 text-center">
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menunavegacion" aria-controls="navbarToggleExternalContent" aria-expanded="false" (click)="arreglo(isExpanded)" >
+      <span class="navbar-toggler-icon"> </span>
+    </button>
+    <div id="Menunavegacion" class="collapse navbar-collapse text-center">
+      <div class="ms-auto">
+        <ul class="navbar-nav">
+          <div class="mt-3" *ngIf="isExpanded">
+          </div>
+         
+          <div class="mt-3" *ngIf="isExpanded">
+          </div>
+          <li class="position nav-item"> <a href="https://www.instagram.com/juampi_costa/"><i class="bi bi-instagram" style="color: rgba(40,125,125,255);"></i></a></li>
+          <li class="nav-item"> <a class="navbar-brand" href="#"></a></li>
+          <li class="position nav-item"> <a href="https://twitter.com/juampi_costa"><i class="bi bi-twitter" style="color: rgba(40,125,125,255)"></i></a></li>
+          <li class="nav-item"> <a class="navbar-brand" href="#"></a></li>
+          <li class="nav-item position"> <a href="https://github.com/Juampicosta123"><i class="bi bi-github" style="color: rgba(40,125,125,255);"></i></a></li>
+          <li class="nav-item"> <a class="navbar-brand" href="#"></a></li>
+          <li class="nav-item"><a href="/login"><button class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Iniciar sesión</button> </a></li>
+          <li class="nav-item"><a href="/"><button class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesión</button> </a></li>
+        </ul>
+      </div>
+   </div>
+  </div>
+  </div> 
+</nav>

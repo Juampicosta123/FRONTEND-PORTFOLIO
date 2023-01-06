@@ -1,0 +1,36 @@
+<div class="container border mt-3 rounded" style="background-color: #1a1e21">
+  <div class="row rounded" style="background-color: rgba(28,52,77,255)">
+    <h2 class="text-light text-center mt-4 mb-4"><strong>Hard & Soft Skills</strong></h2>
+  </div>
+    <div class="col-lg-2 ms-auto">
+      <button type="button" class="btn btn-outline-light mt-3" routerLink="/nuevaskill" *ngIf="isLogged">
+        Agregar skill
+      </button>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 text-center p-3" *ngFor="let skill of skill">
+      <circle-progress 
+        [showTitle]="true"
+        [title]="(skill.nombre)"
+        [titleColor]="'white'"
+        [percent]="(skill.porcentaje)" 
+        [radius]="80" 
+        [showImage]="false"
+        [imageSrc]="''"
+        [imageHeight]="80"
+        [imageWidth]="80"
+        [outerStrokeWidth]="16" 
+        [innerStrokeWidth]="2"
+        [outerStrokeColor]="(skill.color)"
+        [innerStrokeColor]="'white'" 
+        [animation]="true" 
+        [animationDuration]="600"
+        [backgroundColor]="'#363636'"
+      ></circle-progress>
+      <div *ngIf="isLogged" class="mx-3">
+        <button class="btn btn-primary" style="background-color: rgba(40,125,125,255);" routerLink="/editskill/{{skill.id}}"><i class="bi bi-pencil"></i>  Editar</button>
+        <button class="btn mx-2"  style="background-color: rgba(198,224,112,255);" (click)="delete(skill.id)"><i class="bi bi-trash danger"></i></button>
+      </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container text-light border mt-3 rounded" style="background-color: #1a1e21">
+  <div class="row rounded" style="background-color: rgba(28,52,77,255)">
+    <h2 class="mt-4 mb-4 text-center"><strong>Proyectos</strong></h2>
+  </div>
+  <div class="col-lg-2 ms-auto mt-3">
+    <button type="button" class="btn btn-outline-light mb-4" routerLink="/nuevoproy" *ngIf="isLogged">
+      Agregar proyecto
+    </button>
+  </div>
+  <div class="row" *ngFor="let Proyectos of proyectos">
+      <div class="border rounded" style="background-color:#1a1e21;">
+        <div *ngIf="isLogged" class="mb-1 mt-4 mx-4">
+          <button class="btn"style="background-color: rgba(40,125,125,255);" routerLink="/editproy/{{Proyectos.id}}"><i class="bi bi-pencil"></i>  Editar</button>
+          <button class="btn mx-2" style="background-color: rgba(198,224,112,255);" (click)="delete(Proyectos.id)"><i class="bi bi-trash danger"></i></button>
+        </div>
+        <div class="col-12 text-center mt-4 text-break">
+          <h2>{{Proyectos.nombre}}</h2>
+          <p>{{Proyectos.descripcion}}</p>
+          
+        </div>
+        <div class="col-12 text-center mb-4 mt-4">
+          <img src="{{Proyectos.img}}" alt="imagen proyecto" class="img-fluid border border-3 rounded">
+      </div>
+  </div>
+</div>

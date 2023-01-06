@@ -1,0 +1,191 @@
+#bg{
+    background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative;
+    margin-top: -40px;
+}
+ #fotodeperfil{
+    width: 150px; position: absolute; top:575px; left:50px;
+ }
+ #nombre{
+    text-align: center;
+    font-size: large;
+ }
+ #foto{
+    width:150px; height:160px; border-radius: 100%; box-shadow: 4px 4px 4px;
+ }
+ #row2{
+   margin-top: -18px;
+   text-align: center;
+ }
+
+ #margin{
+   margin-top: 86px;
+ }
+
+ @media (max-width:1400px) {
+    #bg{
+        background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative;
+        margin-top: -90px;
+    }
+     #fotodeperfil{
+        width: 135px;position: absolute; top:540px; left:50px;
+     }
+     #nombre{
+        text-align: center; font-size: medium;
+     }
+     #foto{
+        width:140px; height:150px; border-radius: 100%; box-shadow: 3px 3px 3px;
+     }
+     #row2{
+      margin-top: -65px;
+    }
+    }
+    @media (max-width:1200px) {
+        #bg{
+            background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative;
+            margin-top: -135px;
+        }
+         #fotodeperfil{
+            width: 135px;position: absolute; top:497px; left:50px;
+         }
+         #nombre{
+            text-align: center;
+         }
+         #foto{
+            width:130px; height:140px; border-radius: 100%; box-shadow: 3px 3px 3px;
+         }
+         #row2{
+            margin-top: 0px;
+          }
+        }
+@media (max-width:992px) {
+    #bg{
+        background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative; top:-200px;
+        margin-top: 0px;
+    }
+    #fotodeperfil{
+        width: 130px;position: absolute; top:445px; left:50px;
+    }
+    #nombre{
+        text-align: center;font-size: medium;
+     }
+     #foto{
+        width:120px; height:130px;border-radius: 100%; box-shadow: 3px 3px 3px;
+     }
+     #row2{
+      margin-top: -250px;
+    }
+    
+    
+}
+@media (max-width:767px) {
+    #bg{
+        background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative; top:-200px;
+        margin-top: -40px;
+    }
+     #fotodeperfil{
+        width: 125px;position: absolute; top:415px; left:50px;
+     }
+     #nombre{
+        text-align: center; font-size: small;
+     }
+     #foto{
+        width:100px; height:110px;border-radius: 100%; box-shadow: 3px 3px 3px; margin-left: 10px;
+     }
+     #row2{
+      margin-top: -300px;
+    }
+    }
+    @media (max-width:580px) {
+        #bg{
+            background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative; top:-200px;
+        }
+         #fotodeperfil{
+            width: 125px;position: absolute; top:415px; left:50px; 
+         }
+         #nombre{
+            text-align: center;
+         }
+         #foto{
+            width:90px; height:100px;border-radius: 100%; box-shadow: 3px 3px 3px;
+         }
+        }
+        @media (max-width:571px) {
+            #bg{
+                background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative; top:-200px;
+            }
+             #fotodeperfil{
+                width: 125px;position: absolute; top:430px; left:30px; 
+             }
+             #nombre{
+                text-align: center;
+             }
+             #foto{
+                width:80px; height:90px;border-radius: 100%; box-shadow: 3px 3px 3px; margin-left: 15px;
+             }
+            }
+            @media (max-width:500px) {
+               #bg{
+                   background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative; top:-200px;
+               }
+                #fotodeperfil{
+                   width: 125px;position: absolute; top:420px; left:20px; 
+                }
+                #nombre{
+                   text-align: center; font-size: x-small;
+                }
+                #foto{
+                   width:70px; height:80px;border-radius: 100%; box-shadow: 3px 3px 3px; margin-left: 25px;
+                }
+                #row2{
+                  margin-top: -380px;
+                }
+               }
+               @media (max-width:450px) {
+                  #bg{
+                      background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative; top:-200px;
+                  }
+                   #fotodeperfil{
+                      width: 125px;position: absolute; top:400px; left:20px; 
+                   }
+                   #nombre{
+                      text-align: center; font-size: x-small;
+                   }
+                   #foto{
+                      width:70px; height:80px;border-radius: 100%; box-shadow: 3px 3px 3px; margin-left: 25px;
+                   }
+                   #row2{
+                     margin-top: -380px;
+                   }
+                  }
+            @media (max-width:420px) {
+               #bg{
+                   background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative; top:-200px;
+                   margin-top: -80px;
+               }
+                #fotodeperfil{
+                   width: 125px;position: absolute; top:390px; left:15px; 
+                }
+                #nombre{
+                   text-align: center; font-size: x-small;
+                }
+                #foto{
+                   width:70px; height:80px;border-radius: 100%; box-shadow: 3px 3px 3px; margin-left: 25px;
+                }
+                #row2{
+                  margin-top: -380px;
+                }
+               }
+            @media (max-width:350px) {
+                #bg{
+                    background-image: url(../../../assets/img/banner.png); background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:100%; background-position:center; height: 768px; position: relative; top:-200px;
+                }
+                 #fotodeperfil{
+                    width: 125px;position: absolute; top:390px; left:20px; 
+                 }
+                 #nombre{
+                    text-align: center; font-size: x-small;
+                 }
+                 #foto{
+                    width:70px; height:80px;border-radius: 100%; box-shadow: 3px 3px 3px;
+                 }
+                }

@@ -1,0 +1,32 @@
+<div class="container border mt-3 rounded" style="background-color: #1a1e21">
+  <div class="row rounded" style="background-color: rgba(28,52,77,255)">
+    <h2 class="text-light text-center mt-4 mb-4"><strong>Educación</strong></h2>
+  </div>
+  <div class="col-lg-2 ms-auto">
+    <button type="button" class="btn btn-outline-light mt-3" routerLink="/nuevaedu" *ngIf="isLogged">
+      Agregar educación
+    </button>
+  </div>
+    <div class="row">
+          <div class="accordion col-sm-10 col-md-10 col-lg-10 m-auto p-3" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item" *ngFor="let Educacion of educacion">
+                <div *ngIf="isLogged" class="mx-3">
+                <button class="btn" style="background-color: rgba(40,125,125,255);" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil"></i>  Editar</button>
+                <button class="btn mx-2" style="background-color: rgba(198,224,112,255);"  (click)="delete(Educacion.id)"><i class="bi bi-trash danger"></i></button>
+                </div>
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button text-break" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    {{Educacion.nombreE}}
+                    <div class="ms-5">
+                          <img src="{{Educacion.imgE}}" width="50" height="40">
+                    </div>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body text-break">
+                  {{Educacion.descripcionE}}
+                  </div>
+                </div>
+              </div>
+    </div>
+</div>
